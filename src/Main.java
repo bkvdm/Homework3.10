@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
     }
+
     public static void task1 () {
         System.out.println("Задача 1 ");
         byte b = 127;
@@ -22,6 +23,7 @@ public class Main {
         System.out.println("значение переменной с типом float равно " + f);
         System.out.println("значение переменной с типом double равно " + d);
     }
+
     public static void task2 () {
         System.out.println("Задача 2 ");
         float f = 27.12f;
@@ -33,16 +35,17 @@ public class Main {
         byte b = 67;
         System.out.println("Переменные заданы. По условиям задачи, их значения в консоль выводить не нужно");
     }
+
     public static void task3 () {
         System.out.println("Задача 3 ");
         byte luda = 23;
         byte anna = 27;
         byte katya = 30;
-        short bumaga = 480;
-        int otvet = 0;
-        otvet = otvet + bumaga / (luda + anna + katya);
+        short paper = 480;
+        int otvet = paper / (luda + anna + katya);
         System.out.println("На каждого ученика рассчитано " + otvet + " листов бумаги");
     }
+
     public static void task4 () {
         System.out.println("Задача 4 ");
         byte bottleBase = 16;
@@ -65,27 +68,25 @@ public class Main {
         proizv = timeWork * (bottleBase / timeBase);
         System.out.println("За " + ((timeWork / minuteDay) / 30) + " месяц, машина произвела " + proizv + " штук бутылок");
     }
+
     public static void task5 () {
         System.out.println("Задача 5 ");
-        int allklassov = 0;
-        byte allbanok = 120;
-        byte onewhite = 2;
-        byte onebraun = 4;
-        int allwhite = 0;
-        int allbraun = 0;
-        allklassov = allklassov + allbanok / (onewhite + onebraun);
-        allwhite = onewhite * allklassov;
-        allbraun = onebraun * allklassov;
-        System.out.println("В школе, где " + allklassov + " классов, нужно " + allwhite + " банок белой краски и " + allbraun + " банок коричневой краски");
+        byte allBank = 120;
+        byte oneWhite = 2;
+        byte oneBraun = 4;
+        int allKlass = allBank / (oneWhite + oneBraun);
+        int allWhite = oneWhite * allKlass;
+        int allBraun = oneBraun * allKlass;
+        System.out.println("В школе, где " + allKlass + " классов, нужно " + allWhite + " банок белой краски и " + allBraun + " банок коричневой краски");
     }
+
     public static void task6 () {
         System.out.println("Задача 6 ");
-        byte vesbanana = 80;
-        float vesmilk = 200 * 105 / 100;
-        byte snow = 100;
+        byte bananaWeight = 80;
+        float milkWeight = 200 * 105 / 100;
+        byte snowWeight = 100;
         byte egg = 70;
-        float vesbreakfast = 0;
-        vesbreakfast = vesbreakfast + vesbanana * 5 + vesmilk * 1 + snow * 2 + egg * 4;
-        System.out.println("Вес завтрака спортсмена " + vesbreakfast + " грамм или " + vesbreakfast / 1000 + " кг");
+        float breakfastWeight = bananaWeight * 5 + milkWeight * 1 + snowWeight * 2 + egg * 4;
+        System.out.println("Вес завтрака спортсмена " + breakfastWeight + " грамм или " + breakfastWeight / 1000 + " кг");
     }
 }
