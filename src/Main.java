@@ -39,21 +39,16 @@ public class Main {
         byte anna = 27;
         byte katya = 30;
         short bumaga = 480;
-        int otvet = 0;
-        otvet = otvet + bumaga / (luda + anna + katya);
+        int otvet = bumaga / (luda + anna + katya);
         System.out.println("На каждого ученика рассчитано " + otvet + " листов бумаги");
     }
     public static void task4 () {
         System.out.println("Задача 4 ");
         byte bottleBase = 16;
         byte timeBase = 2;
-        int proizv = 0;
         short minuteDay = 24 * 60;
-        int minute = 0;
-        int timeWork = 0;
-        short oneDay = 0;
-        timeWork = timeWork + 20;
-        proizv = timeWork * (bottleBase / timeBase);
+        int timeWork = 20;
+        int proizv = timeWork * (bottleBase / timeBase);
         System.out.println("За " + timeWork + " минут, машина произвела " + proizv + " штук бутылок");
         timeWork = minuteDay;
         proizv = timeWork * (bottleBase / timeBase);
@@ -67,15 +62,12 @@ public class Main {
     }
     public static void task5 () {
         System.out.println("Задача 5 ");
-        int allklassov = 0;
         byte allbanok = 120;
         byte onewhite = 2;
         byte onebraun = 4;
-        int allwhite = 0;
-        int allbraun = 0;
-        allklassov = allklassov + allbanok / (onewhite + onebraun);
-        allwhite = onewhite * allklassov;
-        allbraun = onebraun * allklassov;
+        int allklassov = allbanok / (onewhite + onebraun);
+        int allwhite = onewhite * allklassov;
+        int allbraun = onebraun * allklassov;
         System.out.println("В школе, где " + allklassov + " классов, нужно " + allwhite + " банок белой краски и " + allbraun + " банок коричневой краски");
     }
     public static void task6 () {
